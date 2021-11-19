@@ -1,16 +1,12 @@
 
 describe('example to-do app', () => {
   beforeEach(() => {
-    // Cypress starts out with a blank slate for each test
-    // so we must tell it to visit our website with the `cy.visit()` command.
-    // Since we want to visit the same URL at the start of all our tests,
-    // we include it in our beforeEach function so that it runs before each test
     cy.visit('https://www.hiboo.io/')
   })
 
-  it('displays two todo items by default', () => {
+  it('content is displayed duly', () => {
     cy.contains('Make great decisions with equipment data')
-	cy.contains('Get your access').click
+    cy.contains('Start exploring all your equipment data in no time')
   })
 
  
